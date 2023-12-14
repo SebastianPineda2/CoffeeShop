@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearCuentaAdmin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="57dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/text_crear_cuenta"
+                android:textAlignment="center"
+                android:textColor="@color/color_negro_coffee_shop"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/editTextNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="17dp"
+                android:ems="10"
+                android:hint="  Nombre"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtTextApelliido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="  Apellido"
+                android:inputType="textPersonName" />
+
+            <LinearLayout
+                android:id="@+id/cedula"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/tipoDocumento"
+                    android:layout_width="85dp"
+                    android:layout_height="43dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:entries="@array/tipoDocumento" />
+
+                <EditText
+                    android:id="@+id/txtNumeroDocumento"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint=" N. documento"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextCorreo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="  Correo electrónico"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="  Contraseña"
+                android:inputType="textPassword" />
+
+            <LinearLayout
+                android:id="@+id/roles"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/perfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_gravity="center"
+                    android:entries="@array/RolesAdmin" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/genero"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/masculino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino" />
+
+                <RadioButton
+                    android:id="@+id/femenino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Femenino" />
+
+                <RadioButton
+                    android:id="@+id/otro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Otros" />
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/checkBoxPoliticas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:text="Acepto los terminos y condiciones de uso."
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btnRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="@color/color_fondo_Admin"
+                android:textAllCaps="false"
+                app:cornerRadius="20dp"
+                android:text="@string/text_btn_resgistrarse"
+                android:textColor="@color/color_blanco_coffee_shop" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        style="@style/menuAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menuiniciosesion" />
+
+</RelativeLayout>

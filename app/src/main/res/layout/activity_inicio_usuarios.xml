@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InicioUsuarios">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/slider"
+                android:layout_width="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_height="160dp"
+                app:auto_cycle="true"
+                app:corner_radius="2"
+                app:delay="0"
+                app:error_image="@color/color_blanco_coffee_shop"
+                app:period="1000"
+                app:placeholder="@color/color_blanco_coffee_shop">
+            </com.denzcoskun.imageslider.ImageSlider>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:text="Recomendaciones"
+                android:textAlignment="center"
+                android:textColor="@color/color_negro_Admin"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/imgInicio2"
+                android:layout_width="330dp"
+                android:layout_height="155dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="6dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textBienvenida" />
+
+            <Button
+                android:id="@+id/btnComprarUno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/color_btones_coffee_shop"
+                app:cornerRadius="20dp"
+                android:onClick="verUsuario"
+                android:textAllCaps="false"
+                android:text="@string/text_ver"
+                android:textColor="@color/color_blanco_coffee_shop"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        style="@style/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu" />
+
+</RelativeLayout>

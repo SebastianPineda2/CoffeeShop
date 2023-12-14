@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/iniciarsesion"
+        android:icon="@drawable/ic_iniciarsesion"
+        android:title="Inicio de sesión" />
+
+    <item
+        android:id="@+id/crearcuenta"
+        android:icon="@drawable/ic_crearcuenta"
+        android:title="Crear cuenta" />
+
+</menu>

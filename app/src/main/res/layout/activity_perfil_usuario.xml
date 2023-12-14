@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerfilUsuario">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imgUsuario"
+                android:layout_width="145dp"
+                android:layout_height="210dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/icouser" />
+
+            <TextView
+                android:id="@+id/textBienvenida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="Bienvenido"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnAyuda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="70dp"
+                android:text="Ayuda"
+                android:onClick="ayuda"
+                android:textAllCaps="false"
+                android:textColor="@color/color_blanco_coffee_shop"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btnUbicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="70dp"
+                android:text="Ubicación"
+                android:textAllCaps="false"
+                android:onClick="ubicacion"
+                android:textColor="@color/color_blanco_coffee_shop"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btnAcercade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="70dp"
+                android:text="Acerca de"
+                android:textAllCaps="false"
+                android:onClick="desarrolladores"
+                android:textColor="@color/color_blanco_coffee_shop"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btnCerrarSesion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="70dp"
+                android:backgroundTint="@color/color_btoncerrar_coffee_shop"
+                android:text="Cerrar Sesión"
+                android:textAllCaps="false"
+                android:onClick="cerrarSesion"
+                android:textColor="@color/color_blanco_coffee_shop"
+                app:cornerRadius="20dp"
+                android:layout_marginBottom="40dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/icoFacebook"
+                    android:layout_width="35dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_weight="1"
+                    android:onClick="facebook"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/iconfacebook" />
+
+
+                <TextView
+                    android:id="@+id/redFacebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:onClick="facebook"
+                    android:text="/ CoffeeShop" />
+
+                <ImageView
+                    android:id="@+id/icoInstagram"
+                    android:layout_width="35dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_weight="1"
+                    android:onClick="instagram"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/iconinstagram" />
+
+                <TextView
+                    android:id="@+id/redintagram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:onClick="instagram"
+                    android:text="/ @CoffeeShop" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        style="@style/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu" />
+
+
+
+</RelativeLayout>

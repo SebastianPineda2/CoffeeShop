@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "61896625061",
+    "project_id": "coffeeshopsena-a91ff",
+    "storage_bucket": "coffeeshopsena-a91ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61896625061:android:e33dfa0373d5cda3d7b64c",
+        "android_client_info": {
+          "package_name": "co.edu.sena.coffeeshopsena"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61896625061-4kc3a4gmvutfg08go0b4s8bthp6m3ejl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.edu.sena.coffeeshopsena",
+            "certificate_hash": "1986f3c1afff53c7f5c6c6076967efc75437c541"
+          }
+        },
+        {
+          "client_id": "61896625061-4t1v26v00e9sr8vsr2b99vp8p74opgbb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmTJkgTBsAM4JpqVPAziXxNHpwSXT2VGk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61896625061-4t1v26v00e9sr8vsr2b99vp8p74opgbb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

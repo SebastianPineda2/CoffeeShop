@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AyudaUsuario">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="57dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:text="@string/text_ayuda"
+                android:textAlignment="center"
+                android:textColor="@color/color_negro_Admin"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textAlignment="viewStart"
+                android:text="@string/text_iniciarsesion"
+                android:textColor="@color/color_negro_coffee_shop"
+                android:textSize="18sp" />
+
+            <!-- Vídeo | YouTube -->
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                app:videoId="bkV7TzxzOCw"
+                app:autoPlay="false"
+                app:showYouTubeButton="true"
+                android:scaleType="fitCenter"
+                android:layout_width="330dp"
+                android:layout_height="155dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textAlignment="viewStart"
+                android:text="@string/text_crearcuenta"
+                android:textColor="@color/color_negro_coffee_shop"
+                android:textSize="18sp" />
+
+            <!-- Vídeo | YouTube -->
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                app:videoId="CLzFi62-Pa8"
+                app:autoPlay="false"
+                app:showYouTubeButton="true"
+                android:scaleType="fitCenter"
+                android:layout_width="330dp"
+                android:layout_height="155dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textAlignment="viewStart"
+                android:text="@string/text_recuperarpassword"
+                android:textColor="@color/color_negro_coffee_shop"
+                android:textSize="18sp" />
+
+            <!-- Vídeo | YouTube -->
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                app:videoId="sHw2Avd4eWM"
+                app:autoPlay="false"
+                app:showYouTubeButton="true"
+                android:scaleType="fitCenter"
+                android:layout_width="330dp"
+                android:layout_height="155dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textAlignment="viewStart"
+                android:text="@string/text_realizarcompra"
+                android:textColor="@color/color_negro_coffee_shop"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:scaleType="fitCenter"
+                android:layout_width="330dp"
+                android:layout_height="155dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="6dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        style="@style/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu" />
+
+</RelativeLayout>

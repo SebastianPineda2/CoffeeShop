@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SubirImgAdmin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/text_menu_carta"
+                android:textColor="@color/color_negro_Admin"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/img_foto"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="190dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/subirimg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="40dp"
+                android:text="@string/text_nota_img_admin"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_selefoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:textAllCaps="false"
+                    android:text="Seleccionar"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="@color/color_fondo_Admin"
+                    android:textColor="@color/color_blanco_coffee_shop"/>
+
+                <Button
+                    android:id="@+id/btn_subirfoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:textAllCaps="false"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="@color/color_fondo_Admin"
+                    android:text="Subir"
+                    android:textColor="@color/color_blanco_coffee_shop" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCartaAtrasUno"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/color_fondo_Admin"
+                android:onClick="atrasCartaUno"
+                app:cornerRadius="20dp"
+                android:textAllCaps="false"
+                android:text="@string/btn_atras_admin"
+                android:textColor="@color/color_blanco_coffee_shop"
+                tools:ignore="OnClick" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+    <!-- SupMenu -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        style="@style/menuAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu" />
+
+</RelativeLayout>

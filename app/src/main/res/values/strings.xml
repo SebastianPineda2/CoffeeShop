@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">Coffee Shop Sena</string>
+
+    <string name="text_descripcion_logo_coffee_shop">coffee shop, sena, aplicación coffee shop</string>
+    <string name="text_coffee_shop">Coffee Shop Sena</string>
+
+    <string name="text_inicio_sesion">Iniciar sesión</string>
+    <string name="text_crear_cuenta">Crear cuenta</string>
+
+    <string name="text_btn_ingresar">Ingresar</string>
+    <string name="text_btn_resgistrarse">Registrarse</string>
+
+    <string name="text_btn_comprar">Comprar</string>
+
+    <string name="text_recuperar_cuenta">Restablece tu contraseña</string>
+    <string name="text_btn_enviar">Enviar</string>
+
+    <!-- Menu Superior | Segunda Interfaz -->
+    <string name="text_menu_inicio">Inicio</string>
+    <string name="text_menu_carta">Carta</string>
+    <string name="text_menu_pedidos">Pedidos</string>
+    <string name="text_menu_usuario">Usuario</string>
+
+    <!-- Carta | Mañana | Tarde -->
+    <string name="text_carta_desayunos">Desayunos</string>
+    <string name="text_carta_bebidas_calientes">Bebidas Calientes</string>
+    <string name="text_carta_almuerzos">Almuerzos</string>
+    <string name="text_carta_bebidas_firas">Bebidas Frías</string>
+    <string name="text_carta_helados">Helados</string>
+    <string name="text_carta_lacteos">Lácteos</string>
+    <string name="text_carta_frutas">Frutas</string>
+
+    <!-- Text | Campo de Carta -->
+    <string name="text_producto_precio">$ </string>
+    <string name="text_producto_titulo">Producto: </string>
+    <string name="text_producto_Descripcion">Descripción: </string>
+
+
+    <!-- text | Interfaz Ayuda Usuario -->
+    <string name="text_ayuda">Guía del Usuario</string>
+    <string name="text_iniciarsesion">¿Cómo iniciar sesión?</string>
+    <string name="text_crearcuenta">¿Cómo crear una cuenta?</string>
+    <string name="text_recuperarpassword">¿Cómo restablecer tu contraseña?</string>
+    <string name="text_realizarcompra">¿Cómo realizar una compra?</string>
+    <string name="text_ver">Ver</string>
+
+    <!-- text | Interfaz Ayuda Admin -->
+    <string name="text_ayuda_admin">Guía del Adminsitrador</string>
+    <string name="text_iniciarsesion_admin">¿Cómo iniciar sesión?</string>
+    <string name="text_crearcuenta_admin">¿Cómo crear una cuenta?</string>
+    <string name="text_subirproductos_admin">¿Cómo subir los productos?</string>
+    <string name="text_usserregistrados_admin">¿Cómo ver usuarios registrados?</string>
+    <string name="text_atendercompra_admin">¿Cómo atender compras de los usuarios?</string>
+
+
+    <!-- Text | Botton -->
+    <string name="btn_atras_admin">Atras</string>
+    <string name="btn_siguiente_admin">Siguiente</string>
+
+    <!-- Producto | Admin -->
+    <string name="text_subirimgproductos_admin">Subir imagenes de los productos:</string>
+    <string name="text_ingreproductos_admin">Ingrese el producto:</string>
+    <string name="text_nota_img_admin">Nota: El formato de las imagenes deben ser en .JPG</string>
+    <string name="text_ver_admin">Ver</string>
+
+    <!-- Spinner Tipo de Documento -->
+    <string-array name="tipoDocumento">
+        <item> Tipo</item>
+        <item>T.I</item>
+        <item>C.C</item>
+    </string-array>
+
+    <string-array name="Roles">
+        <item>Usuario</item>
+    </string-array>
+
+    <string-array name="RolesAdmin">
+        <item>Seleccione Perfil</item>
+        <item>Usuario</item>
+        <item>Administrador</item>
+    </string-array>
+
+    <string-array name="listNomProductos">
+        <item>Categoría de productos</item>
+        <item>Desayunos</item>
+        <item>Bebidas calientes</item>
+        <item>Almuerzos</item>
+        <item>Bebidas frías</item>
+        <item>Helados</item>
+        <item>Lácteos</item>
+        <item>Frutas</item>
+    </string-array>
+
+    <!-- Spinner Tipo de Documento -->
+    <string-array name="cantidad">
+        <item>Seleccione cantidad</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_mapa_usuarios">Map</string>
+
+</resources>

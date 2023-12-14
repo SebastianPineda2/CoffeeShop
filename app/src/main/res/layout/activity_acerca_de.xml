@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AcercaDe">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="57dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:text="Colaboradores"
+                android:textColor="@color/color_negro_coffee_shop"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textAlignment="textStart"
+                android:text="Desarrollado por:"
+                android:textColor="@color/color_negro_coffee_shop"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:scaleType="fitCenter"
+                android:layout_width="330dp"
+                android:layout_height="155dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/senasebastian"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textAlignment="center"
+                android:text="Jhon Sebastian Pineda Zambrano"
+                android:textColor="@color/color_negro_coffee_shop"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textAlignment="center"
+                android:text="Programador, diseñador grafico, pruebas de software."
+                android:textColor="@color/color_negro_coffee_shop"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:scaleType="fitCenter"
+                android:layout_width="330dp"
+                android:layout_height="155dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/senaandres"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textAlignment="center"
+                android:text="Duvan Andres Velasco Mesa"
+                android:textColor="@color/color_negro_coffee_shop"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textAlignment="center"
+                android:text="Programador, pruebas de software."
+                android:textColor="@color/color_negro_coffee_shop"
+                android:textSize="17sp" />
+
+
+            <ImageView
+                android:scaleType="fitCenter"
+                android:layout_width="330dp"
+                android:layout_height="155dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/senacesar"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textAlignment="center"
+                android:text="Cesar Augusto Banguero Ceballos"
+                android:textColor="@color/color_negro_coffee_shop"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textAlignment="center"
+                android:text="Programador, pruebas de software."
+                android:textColor="@color/color_negro_coffee_shop"
+                android:textSize="17sp" />
+
+
+            <ImageView
+                android:scaleType="fitCenter"
+                android:layout_width="330dp"
+                android:layout_height="155dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/senamarco"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textAlignment="center"
+                android:text="Marco Cobo Carabali"
+                android:textColor="@color/color_negro_coffee_shop"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textAlignment="center"
+                android:text="Programador, pruebas de software."
+                android:textColor="@color/color_negro_coffee_shop"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textAlignment="center"
+                android:text="© Coffee Shop Sena | 2021"
+                android:textColor="@color/color_negro_coffee_shop"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        style="@style/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu" />
+
+</RelativeLayout>

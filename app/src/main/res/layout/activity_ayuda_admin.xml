@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AyudaAdmin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="57dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:text="@string/text_ayuda_admin"
+                android:textAlignment="center"
+                android:textColor="@color/color_negro_Admin"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/textBienvenida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textAlignment="viewStart"
+                android:text="@string/text_iniciarsesion_admin"
+                android:textColor="@color/color_negro_coffee_shop"
+                android:textSize="18sp" />
+
+            <!-- Vídeo | YouTube -->
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                app:videoId="LgMBLHRc0dw"
+                app:autoPlay="false"
+                app:showYouTubeButton="true"
+                android:scaleType="fitCenter"
+                android:layout_width="330dp"
+                android:layout_height="155dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textAlignment="viewStart"
+                android:text="@string/text_crearcuenta_admin"
+                android:textColor="@color/color_negro_coffee_shop"
+                android:textSize="18sp" />
+
+            <!-- Vídeo | YouTube -->
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                app:videoId="MbgE3GOJWFY"
+                app:autoPlay="false"
+                app:showYouTubeButton="true"
+                android:scaleType="fitCenter"
+                android:layout_width="330dp"
+                android:layout_height="155dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textAlignment="viewStart"
+                android:text="@string/text_subirproductos_admin"
+                android:textColor="@color/color_negro_coffee_shop"
+                android:textSize="18sp" />
+
+            <!-- Vídeo | YouTube -->
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                app:videoId="eH4t9sWzvZk"
+                app:autoPlay="false"
+                app:showYouTubeButton="true"
+                android:scaleType="fitCenter"
+                android:layout_width="330dp"
+                android:layout_height="155dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textAlignment="viewStart"
+                android:text="@string/text_usserregistrados_admin"
+                android:textColor="@color/color_negro_coffee_shop"
+                android:textSize="18sp" />
+
+            <!-- Vídeo | YouTube -->
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                app:videoId="bkV7TzxzOCw"
+                app:autoPlay="false"
+                app:showYouTubeButton="true"
+                android:scaleType="fitCenter"
+                android:layout_width="330dp"
+                android:layout_height="155dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="6dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        style="@style/menuAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu" />
+
+</RelativeLayout>

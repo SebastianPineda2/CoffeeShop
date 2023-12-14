@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fondo_coffee_shop"
+    tools:context=".Flash">
+
+    <ImageView
+        android:id="@+id/coffeeshoplogo"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:contentDescription="@string/text_descripcion_logo_coffee_shop"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.473"
+        app:srcCompat="@drawable/splashinicial" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_coffee_shop"
+        android:textAlignment="center"
+        android:textColor="@color/color_blanco_coffee_shop"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coffeeshoplogo"
+        app:layout_constraintVertical_bias="0.043" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

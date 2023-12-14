@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ApartUsuariosAdmin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.272">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imgAdmin"
+                android:layout_width="145dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/icoadmin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Administrador"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+
+            <Button
+                android:id="@+id/btnUsserRegistrados"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="70dp"
+                android:text="Buscar Usuarios"
+                android:backgroundTint="@color/color_fondo_Admin"
+                android:textAllCaps="false"
+                android:onClick="usserRegistrados"
+                android:textColor="@color/color_blanco_coffee_shop"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btnCrearCuentaAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="70dp"
+                android:text="Crear Cuenta Admin"
+                android:backgroundTint="@color/color_fondo_Admin"
+                android:textAllCaps="false"
+                android:onClick="agregarCuentaAdmin"
+                android:textColor="@color/color_blanco_coffee_shop"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btnAtras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="70dp"
+                android:backgroundTint="@color/color_btoncerrar_coffee_shop"
+                android:text="Atras"
+                android:textAllCaps="false"
+                android:onClick="interPerfilAdmin"
+                android:textColor="@color/color_blanco_coffee_shop"
+                app:cornerRadius="20dp"
+                android:layout_marginBottom="120dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

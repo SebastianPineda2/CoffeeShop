@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InicioSesion">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="57dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/text_inicio_sesion"
+                android:textAlignment="center"
+                android:textColor="@color/color_negro_coffee_shop"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="  Correo electrónico"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:ems="10"
+                android:hint="  Contraseña"
+                android:inputType="textPassword" />
+
+
+            <TextView
+                android:id="@+id/recuperarpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:textAlignment="center"
+                android:onClick="restablecerPassword"
+                android:text="¿Has olvidado la contraseña?" />
+
+            <Button
+                android:id="@+id/btnComprarUno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="@color/color_btones_coffee_shop"
+                app:cornerRadius="20dp"
+                android:textAllCaps="false"
+                android:text="@string/text_btn_ingresar"
+                android:textColor="@color/color_blanco_coffee_shop"
+                android:onClick="login"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- SupMenu de Usuario -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        style="@style/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menuiniciosesion" />
+
+</RelativeLayout>
